@@ -3,46 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family:'seo90';
-    src: url('fonts/IranianSans.ttf') format('TrueType');
+    src: url('../fonts/IranianSans.ttf') format('TrueType');
 }
+
 html , body {
     font-family: 'seo90', Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-align: right;
     background-color: #faf4f4;
 }
+
 img {
     max-width: 100%;
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
 .container {
     width: 960px;
     margin: 0 auto;
 }
+
 .col {
     padding: 15px;
 }
+
 .menu {
     background-color: #fff;
     margin-bottom: 50px;
     position: relative;
 }
+
 .switch{
     position: absolute;
     top: 20px;
     left: 20px;
 }
+
 .switch input{
     width: 0;
     height: 0;
 }
+
 .switch label {
     display: inline-block;
     background-color: #FF6347FF;
@@ -51,6 +62,7 @@ a {
     border-radius: 20px;
     cursor: pointer;
 }
+
 .switch label::before{
     content: "";
     position: absolute;
@@ -62,18 +74,22 @@ a {
     top: 2px;
     transition: all 0.3s ease;
 }
+
 .switch input[type="checkbox"]:checked + label::before {
     left: 20px;
     transition: all 0.3s ease;
 }
+
 .switch input[type="checkbox"]:checked + label {
     background-color: #591206FF;
 }
+
 .menu li {
     display: inline-block;
     margin-left: 18px;
     position: relative;
 }
+
 .menu li::before {
     content: "";
     position: absolute;
@@ -84,17 +100,20 @@ a {
     top: 28px;
     right: 0;
 }
+
 .menu li:first-child:before {
     content: "";
     position: absolute;
     width: 0;
     height: 0;
 }
+
 .menu li a {
     display: inline-block;
     padding: 20px;
     color: #666;
 }
+
 .menu li ul {
     position:absolute;
     top: 56px;
@@ -106,11 +125,13 @@ a {
     visibility: hidden;
     z-index: 20;
 }
+
 .menu li:hover ul {
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
 }
+
 .menu li ul::before {
     content: "";
     position: absolute;
@@ -121,16 +142,19 @@ a {
     z-index: 1;
     top: -20px;
 }
+
 .menu li ul li {
     display: block;
     margin-left: 0;
     padding: 2px;
 }
+
 .menu li ul li::before {
     content: "";
     width: 0;
     height: 0;
 }
+
 .menu li ul li a {
     display: block;
     background-color: #fff;
@@ -139,14 +163,17 @@ a {
     font-size: 13px;
     position: relative;
 }
+
 .product-div {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .pi {
     padding: 0 15px;
     display: inline-block;
 }
+
 .product-item {
     width: 270px;
     padding: 15px;
@@ -155,9 +182,11 @@ a {
     position: relative;
 
 }
+
 .product-item img {
     border-radius: 20px;
 }
+
 .product-item::before {
     content: "OFF";
     position: absolute;
@@ -172,6 +201,7 @@ a {
     border-radius: 10px 0;
     z-index: 10;
 }
+
 .product-item::after {
     content: "";
     position: absolute;
@@ -182,6 +212,7 @@ a {
     top: 30px;
     right: -20px;
 }
+
 a.read-more {
     display: table;
     margin: 50px auto 0;
@@ -191,6 +222,7 @@ a.read-more {
     position: relative;
     z-index: 1;
 }
+
 a.read-more::before {
     content: "";
     position: absolute;
@@ -202,11 +234,13 @@ a.read-more::before {
     z-index: -1;
     transition: all 0.5s ease;
 }
+
 a.read-more:hover::before {
     content: "";
     width: 100%;
     transition: all 0.5s ease;
 }
+
 .index-text {
     padding: 30px;
     border: 1px solid #c7c5c5;
@@ -214,20 +248,24 @@ a.read-more:hover::before {
     background-color: #fff;
     margin-bottom: 50px;
 }
+
 .index-text .box {
     width: 49%;
     display: inline-block;
     line-height: 2;
     text-align: justify;
 }
+
 .index-text .box h3{
     margin-bottom: 20px;
     font-weight: normal;
 }
+
 .index-text .box p{
     padding: 15px;
     position: relative;
 }
+
 .index-text .box p::before {
     content: "";
     position: absolute;
@@ -239,6 +277,7 @@ a.read-more:hover::before {
     background-color: #FF6347FF;
     box-shadow: 0 0 5px #FF6347FF;
 }
+
 .index-text .box p::after {
     content: "";
     position: absolute;
@@ -248,11 +287,13 @@ a.read-more:hover::before {
     height: 100%;
     border-right:1px dashed #FF6347FF
 }
+
 .product-item figure {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
 }
+
 .product-item figcaption {
     position: absolute;
     width: 100%;
@@ -263,6 +304,7 @@ a.read-more:hover::before {
     text-align: center;
     z-index: 10;
 }
+
 .product-item figure::after {
     content: "";
     position: absolute;
@@ -272,9 +314,11 @@ a.read-more:hover::before {
     right: 0;
     background-color: rgba(0, 0, 0, 0.18);
 }
+
 .product-item figcaption li{
     display: inline-block;
 }
+
 .product-item figcaption a {
     display: inline-block;
     width: 40px;
@@ -284,6 +328,7 @@ a.read-more:hover::before {
     border-radius: 10px;
     text-align: center;
 }
+
 a.abtn {
     display: table;
     padding: 8px 20px;
@@ -295,10 +340,12 @@ a.abtn {
     transition: all 0.4s ease;
     margin: 50px auto 50px;
 }
+
 a.abtn:hover{
     padding-left: 40px;
     transition: all 0.4s ease;
 }
+
 a.abtn::before {
     content: "";
     position: absolute;
@@ -307,12 +354,14 @@ a.abtn::before {
     transition: all 0.4s ease;
     color: #fff;
 }
+
 a.abtn:hover::before {
     content: "\f104";
-    font-family: fontawesome;
+    font-family: 'seo90', Arial, Helvetica, sans-serif;
     width: 20px;
     transition: all 0.4s ease;
 }
+
 .footer-desc .item {
     background-color: #fff;
     padding: 30px;
@@ -323,6 +372,7 @@ a.abtn:hover::before {
     position: relative;
     color: #515151;
 }
+
 .footer-desc .item::before {
     content: "";
     position: absolute;
@@ -333,6 +383,7 @@ a.abtn:hover::before {
     background-color: #c7c5c5;
     transition: all 1s ease;
 }
+
 .footer-desc .item::after {
     content: "";
     position: absolute;
@@ -343,10 +394,12 @@ a.abtn:hover::before {
     background-color: #FF6347FF;
     transition: all 1s ease;
 }
+
 .footer-desc .item:hover:after {
     height: 100%;
     transition: all 1s ease;
 }
+
 .footer-desc .item h3 {
     font-weight: normal;
     color: #e1dede;
@@ -356,21 +409,23 @@ a.abtn:hover::before {
     border-radius: 4px;
     position: relative;
 }
+
 .footer-desc .item h3::before {
     content: "";
     position: absolute;
     width: 16px;
     height: 16px;
-    background-image: url("img/tick.png");
+    background-image: url("../images/tick.png");
     right: 6px;
     top: 11px;
 }
+
 .footer-desc .item:nth-child(2) h3::before {
     content: "";
     position: absolute;
     width: 16px;
     height: 16px;
-    background-image: url("img/tick2.png");
+    background-image: url("../images/tick2.png");
     right: 6px;
     top: 11px;
 }
